@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'HipHop';
+    src: url('/assets/fonts/VAST_MX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'truelies';
+    src: url('/assets/fonts/True\ Lies.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'graffiti';
+    src: url('/assets/fonts/MARSNEVENEKSK-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.navbar-brand{
+    font-family: 'HipHop';
+}
+
+.navbar{
+    z-index: 3;
+}
+
+.navsec{
+    position: relative;
+    background-image: url('https://imgix.bustle.com/mic/e0lkxcygksgb59lls6powdu4j53g5h6h53783zyi76yzbh7hphilmhojje5x81tb.jpg?w=1200&h=675&fit=crop&crop=faces&fm=jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.navsec::after{
+    content: '';
+    position: absolute; /* Untuk mengisi seluruh section */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Hitam dengan transparansi */
+    z-index: 1; /* Pastikan overlay di atas gambar */
+}
+
+.nav-item{
+    font-family: "Lexend Peta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.home{
+    position: relative;
+    z-index: 2;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Posisikan teks di tengah */
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+
+.home h1{
+    font-family: graffiti;
+    font-size: 8rem; 
+    text-shadow: 2px 2px 10px rgba(106, 13, 173, 0.7), 0px 0px 10px rgba(160, 19, 160, 0.6);
+    margin-top: 7rem;
+}
+
+.home h4{
+    font-family: Lexend Peta;
+    font-size: 1.2rem; 
+    color: white; 
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(106, 13, 173, 0.7), 0px 0px 10px rgba(63, 7, 63, 0.692);
+
+}
+
+.home p{
+    font-size: 0.9rem; 
+    color: white; 
+    font-weight: 700;
+    max-width: 500px;
+    text-align: center;
+} 
+
+.timeline {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 700px;
+    position: relative;
+}
+
+.timeline__content-title {
+    font-weight: normal;
+    font-size: 66px;
+    padding: 0 10px;
+    font-family: truelies;
+    color: white;
+}
+
+.timeline__content-desc {
+    font-size: 15px;
+    color: white;
+    font-family: Lexend Peta;
+    line-height: 25px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .timeline::before {
+        left: 40px;
+    }
+}
+
+.timeline-item {
+    padding: 40px 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    width: calc(50% - 40px);
+    display: flex;
+    position: relative;
+    transform: translateY(-80px);
+}
+
+.timeline-item::before {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    font-family: Lexend Peta;
+    top: 70%;
+    padding-left: 15px;
+    opacity: 0;
+    right: calc(-100% - 56px);
+}
+
+.timeline-item:nth-child(even) {
+    align-self: flex-end;
+}
+
+
+.timeline__img {
+    max-width: 100%;
+    width: 300%; 
+    height: auto; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-container {
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+
+.timeline-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.timeline-header__title {
+    color: white;
+    font-size: 46px;
+    font-family: HipHop;
+}
+
+.timeline-header__subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Lexend Peta;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+.demo-footer {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.demo-footer a {
+    color: white;
+    font-family: HipHop;
+}

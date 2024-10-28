@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'HipHop';
-    src: url('/assets/fonts/VAST_MX.ttf') format('truetype');
+    src: url('../../assets/fonts/VAST_MX.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'truelies';
-    src: url('/assets/fonts/True\ Lies.ttf') format('truetype');
+    src: url('../../assets/fonts/True\ Lies.ttf ') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -168,7 +168,7 @@
 .about {
     position: relative;
     width: 100%;
-    background-image: url("/assets/images/gacor.jpg");
+    background-image: url("../../assets/images/gacor.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

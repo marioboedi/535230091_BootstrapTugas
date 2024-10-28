@@ -321,3 +321,32 @@
     width: 100%;
 }
 /* GALLERY */
+
+/* MUSIC */
+
+
+.music-box .accordion-button::after{
+    background-color: white;
+    border-radius: 100%;
+}
+
+.music img{
+    max-width: 100%;
+    height: 250px; 
+    padding: 15px;
+    object-fit: cover;
+}
+
+.music h1{
+    font-family: Lexend Peta;
+}
+
+.music{
+    background-color: black;
+    color: white;
+}
+
+.music .accordion-body{
+    color: black;
+}
+/* MUSIC */

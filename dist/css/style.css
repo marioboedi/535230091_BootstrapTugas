@@ -349,4 +349,16 @@
 .music .accordion-body{
     color: black;
 }
+
+@media (max-width: 1200px) {
+    .music-item {
+        width: 150px; /* Ubah ukuran gambar sesuai kebutuhan */
+    }
+
+    .accordion-body audio {
+        width: 100%; /* Membuat audio kontrol menyesuaikan lebar kontainernya */
+    }
+}
+
+
 /* MUSIC */
